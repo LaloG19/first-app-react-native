@@ -1,14 +1,20 @@
-import { Image, StyleSheet, Platform } from 'react-native';
-import TabTwoScreen from './explore';
-import TabThreeScreen from './tab2';
+import { StyleSheet } from 'react-native';
+import ExploreScreen from './Explore';
+import MainScreen from './Main';
+import PoliciesScreen from './Policies';
+import ContactScreen from './Contact';
+import AbouttScreen from './About';
 import { createStackNavigator } from '@react-navigation/stack';
 
 const Stack = createStackNavigator();
 export default function HomeScreen() {
   return (
-    <Stack.Navigator initialRouteName="!">
-      <Stack.Screen name="explore" component={TabTwoScreen} />
-      <Stack.Screen name="Explorar" component={TabThreeScreen} />
+    <Stack.Navigator initialRouteName="Main">
+      <Stack.Screen name="Main" component={MainScreen} />
+      <Stack.Screen name="Explorar" component={ExploreScreen} />
+      <Stack.Screen name="Politicas" component={PoliciesScreen} />
+      <Stack.Screen name="Contacto" component={ContactScreen} />
+      <Stack.Screen name="Sobre Nosotros" component={AbouttScreen} />
     </Stack.Navigator>
   );
 }
