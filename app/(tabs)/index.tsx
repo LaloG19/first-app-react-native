@@ -4,6 +4,8 @@ import MainScreen from './Main';
 import PoliciesScreen from './Policies';
 import ContactScreen from './Contact';
 import AbouttScreen from './About';
+import NoticesScreen from './Notices';
+
 import { createStackNavigator } from '@react-navigation/stack';
 
 const Stack = createStackNavigator();
@@ -15,6 +17,7 @@ export default function HomeScreen() {
       <Stack.Screen name="Politicas" component={PoliciesScreen} />
       <Stack.Screen name="Contacto" component={ContactScreen} />
       <Stack.Screen name="Sobre Nosotros" component={AbouttScreen} />
+      <Stack.Screen name="Noticias" component={NoticesScreen} options={{ headerShown: false }} />
     </Stack.Navigator>
   );
 }

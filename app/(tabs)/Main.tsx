@@ -16,6 +16,9 @@ export default function MainScreen ({ navigation }: any) {
       <TouchableOpacity style={[styles.buttonContainer, { backgroundColor: '#FFFF00' }]} onPress={() => navigation.navigate("Sobre Nosotros")}>
         <Text style={styles.buttonText}>Sobre Nosotros</Text>
       </TouchableOpacity>
+      <TouchableOpacity style={[styles.buttonContainer, { backgroundColor: '#800080' }]} onPress={() => navigation.navigate("Noticias")}>
+        <Text style={styles.buttonText}>Noticias</Text>
+      </TouchableOpacity>
     </View>
   );
 }
