@@ -5,6 +5,7 @@ import PoliciesScreen from './Policies';
 import ContactScreen from './Contact';
 import AbouttScreen from './About';
 import NoticesScreen from './Notices';
+import MessagesScreen from '../Messages';
 
 import { createStackNavigator } from '@react-navigation/stack';
 
@@ -18,6 +19,7 @@ export default function HomeScreen() {
       <Stack.Screen name="Contacto" component={ContactScreen} />
       <Stack.Screen name="Sobre Nosotros" component={AbouttScreen} />
       <Stack.Screen name="Noticias" component={NoticesScreen} options={{ headerShown: false }} />
+      <Stack.Screen name="Mensajes" component={MessagesScreen} />
     </Stack.Navigator>
   );
 }
